@@ -56,6 +56,7 @@ public:
     
     // helper for tests to inject commands
     void enqueue_command(const Command& cmd);
+    void add_test_commands(); // Add simulated commands for testing
 
 private:
     // --- helpers mirroring Python implementation ---
@@ -85,10 +86,13 @@ private:
     // Selected piece for user interaction
     PiecePtr selected_piece_ = nullptr;
     std::pair<int, int> cursor_pos_ = {0, 0};
+    std::pair<int, int> selected_piece_pos_ = {-1, -1}; // Position of selected piece
     bool is_selecting_target_ = false;
     int current_player_ = 1;  // Current active player
+    int test_command_counter_ = 0;  // Counter for test commands
 
     std::chrono::steady_clock::time_point start_tp;
+    int last_test_time_ = 0;  // Last time a test command was added
     
     // Helper functions for user interaction
     void handle_mouse_click(int x, int y);

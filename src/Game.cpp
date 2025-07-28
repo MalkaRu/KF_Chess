@@ -21,6 +21,10 @@ Board Game::clone_board() const {
 void Game::run(int num_iterations, bool is_with_graphics) {
     running_ = true;
     start_user_input_thread();
+    
+    // Add test commands for debugging
+    add_test_commands();
+    
     int start_ms = game_time_ms();
     for(auto & p : pieces) p->reset(start_ms);
 
@@ -106,6 +110,22 @@ void Game::run_game_loop(int num_iterations, bool is_with_graphics) {
         std::cout << "\n=== Iteration " << it_counter << " ===" << std::endl;
         now = game_time_ms();
         
+        // Add test commands every 3 seconds for piece movement
+        if (now - last_test_time_ >= 3000 && test_command_counter_ < 8) {
+            switch(test_command_counter_) {
+                case 0: enqueue_command(Command(now, "", "select", {}, 1)); break;  // Select piece at (0,0)
+                case 1: enqueue_command(Command(now, "", "up", {}, 1)); break;      // Move cursor up to empty space
+                case 2: enqueue_command(Command(now, "", "up", {}, 1)); break;      // Move cursor up again
+                case 3: enqueue_command(Command(now, "", "select", {}, 1)); break;  // Move piece to empty position
+                case 4: enqueue_command(Command(now, "", "down", {}, 1)); break;    // Move cursor back down
+                case 5: enqueue_command(Command(now, "", "right", {}, 1)); break;   // Move cursor right
+                case 6: enqueue_command(Command(now, "", "select", {}, 1)); break;  // Select another piece
+                case 7: enqueue_command(Command(now, "", "up", {}, 1)); break;      // Move to empty space
+            }
+            test_command_counter_++;
+            last_test_time_ = now;
+        }
+        
         // Update all pieces
         for(auto & p : pieces) {
             p->update(now);
@@ -146,6 +166,9 @@ void Game::run_game_loop(int num_iterations, bool is_with_graphics) {
                 const auto& piece = pieces[i];
                 
                 auto cell = piece->current_cell();
+                if (i < 3) { // Debug first 3 pieces
+                    std::cout << "[DEBUG] Drawing piece " << piece->id << " at (" << cell.first << "," << cell.second << ")" << std::endl;
+                }
                 
                 try {
                     if (!piece->state) {
@@ -246,10 +269,48 @@ void Game::process_input(const Command& cmd) {
     else if (cmd.type == "left") move_cursor(-1, 0);
     else if (cmd.type == "right") move_cursor(1, 0);
     else if (cmd.type == "select") {
-        auto cell_pieces_it = pos.find(cursor_pos_);
-        if (cell_pieces_it != pos.end() && !cell_pieces_it->second.empty()) {
-            selected_piece_ = cell_pieces_it->second[0];
-            std::cout << "[PROCESS] Selected piece: " << selected_piece_->id << " at cursor position" << std::endl;
+        // Handle selection logic like Python KeyboardProducer
+        std::string my_color = (cmd.player_id == 1) ? "W" : "B";
+        
+        if (selected_piece_ == nullptr) {
+            // First press - pick up piece under cursor
+            auto cell_pieces_it = pos.find(cursor_pos_);
+            if (cell_pieces_it != pos.end() && !cell_pieces_it->second.empty()) {
+                auto piece = cell_pieces_it->second[0];
+                
+                // Check if piece belongs to current player
+                if (piece->id[1] != my_color[0]) {
+                    std::cout << "[PROCESS] Player " << cmd.player_id << " (" << my_color << ") cannot select " << piece->id << std::endl;
+                    return;
+                }
+                
+                selected_piece_ = piece;
+                selected_piece_pos_ = cursor_pos_;
+                std::cout << "[PROCESS] Player " << cmd.player_id << " selected " << piece->id << " at (" << cursor_pos_.first << "," << cursor_pos_.second << ")" << std::endl;
+            } else {
+                std::cout << "[PROCESS] No piece at (" << cursor_pos_.first << "," << cursor_pos_.second << ")" << std::endl;
+            }
+        } else if (cursor_pos_ == selected_piece_pos_) {
+            // Same position - deselect
+            std::cout << "[PROCESS] Deselected " << selected_piece_->id << std::endl;
+            selected_piece_ = nullptr;
+            selected_piece_pos_ = {-1, -1};
+        } else {
+            // Different position - create move command like Python
+            std::cout << "[PROCESS] Player " << cmd.player_id << " moving " << selected_piece_->id << " from (" << selected_piece_pos_.first << "," << selected_piece_pos_.second << ") to (" << cursor_pos_.first << "," << cursor_pos_.second << ")" << std::endl;
+            
+            Command move_cmd(cmd.timestamp, selected_piece_->id, "move", {selected_piece_pos_, cursor_pos_}, cmd.player_id);
+            
+            // Process the move command directly like Python does
+            auto piece_it = piece_by_id.find(move_cmd.piece_id);
+            if (piece_it != piece_by_id.end()) {
+                std::cout << "[PROCESS] Executing move command for " << move_cmd.piece_id << std::endl;
+                piece_it->second->on_command(move_cmd, pos);
+            }
+            
+            // Reset selection
+            selected_piece_ = nullptr;
+            selected_piece_pos_ = {-1, -1};
         }
     }
 }
@@ -285,6 +346,11 @@ void Game::enqueue_command(const Command& cmd) {
     std::lock_guard<std::mutex> lock(queue_mutex_);
     user_input_queue.push(cmd);
     cv_.notify_one();
+}
+
+void Game::add_test_commands() {
+    // Don't add commands immediately - let them be added during game loop
+    std::cout << "[TEST] Test commands will be added during game loop" << std::endl;
 }
 
 // Enhanced user interaction methods from CTD25_1

@@ -303,6 +303,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\Game.hpp" />
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\Graphics.hpp" />
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\GraphicsFactory.hpp" />
+    <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\KeyboardProcessor.hpp" />
+    <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\KeyboardProducer.hpp" />
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\Moves.hpp" />
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\Physics.hpp" />
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\PhysicsFactory.hpp" />

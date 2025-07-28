@@ -81,7 +81,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.6+db5f6012c for .NET Framework
-      Build started 28/07/2025 00:10:22.
+      Build started 28/07/2025 11:34:53.
       
       Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\4.1.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -110,7 +110,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:03.69
+      Time Elapsed 00:00:01.38
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -811,7 +811,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.6+db5f6012c for .NET Framework
-      Build started 28/07/2025 00:10:27.
+      Build started 28/07/2025 11:34:54.
       
       Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\4.1.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -840,7 +840,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:03.87
+      Time Elapsed 00:00:01.66
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1270,8 +1270,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-26t323"
-      binary: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-26t323"
+      source: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-getvez"
+      binary: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-getvez"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1280,40 +1280,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-26t323'
+        Change Dir: 'C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-getvez'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1e310.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_129fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.6+db5f6012c for .NET Framework
-        Build started 28/07/2025 00:10:33.
+        Build started 28/07/2025 11:34:58.
         
-        Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26t323\\cmTC_1e310.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-getvez\\cmTC_129fb.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_1e310.dir\\Debug\\".
+          Creating directory "cmTC_129fb.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26t323\\Debug\\".
-          Creating directory "cmTC_1e310.dir\\Debug\\cmTC_1e310.tlog\\".
+          Creating directory "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-getvez\\Debug\\".
+          Creating directory "cmTC_129fb.dir\\Debug\\cmTC_129fb.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1e310.dir\\Debug\\cmTC_1e310.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1e310.dir\\Debug\\cmTC_1e310.tlog\\unsuccessfulbuild".
+          Creating "cmTC_129fb.dir\\Debug\\cmTC_129fb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_129fb.dir\\Debug\\cmTC_129fb.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1e310.dir\\Debug\\\\" /Fd"cmTC_1e310.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_129fb.dir\\Debug\\\\" /Fd"cmTC_129fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1e310.dir\\Debug\\\\" /Fd"cmTC_1e310.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_129fb.dir\\Debug\\\\" /Fd"cmTC_129fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26t323\\Debug\\cmTC_1e310.exe" /INCREMENTAL /ILK:"cmTC_1e310.dir\\Debug\\cmTC_1e310.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-26t323/Debug/cmTC_1e310.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-26t323/Debug/cmTC_1e310.lib" /MACHINE:X64  /machine:x64 cmTC_1e310.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_1e310.vcxproj -> C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26t323\\Debug\\cmTC_1e310.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-getvez\\Debug\\cmTC_129fb.exe" /INCREMENTAL /ILK:"cmTC_129fb.dir\\Debug\\cmTC_129fb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-getvez/Debug/cmTC_129fb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-getvez/Debug/cmTC_129fb.lib" /MACHINE:X64  /machine:x64 cmTC_129fb.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_129fb.vcxproj -> C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-getvez\\Debug\\cmTC_129fb.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_1e310.dir\\Debug\\cmTC_1e310.tlog\\unsuccessfulbuild".
-          Touching "cmTC_1e310.dir\\Debug\\cmTC_1e310.tlog\\cmTC_1e310.lastbuildstate".
-        Done Building Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-26t323\\cmTC_1e310.vcxproj" (default targets).
+          Deleting file "cmTC_129fb.dir\\Debug\\cmTC_129fb.tlog\\unsuccessfulbuild".
+          Touching "cmTC_129fb.dir\\Debug\\cmTC_129fb.tlog\\cmTC_129fb.lastbuildstate".
+        Done Building Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-getvez\\cmTC_129fb.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:04.32
+        Time Elapsed 00:00:01.28
         
       exitCode: 0
   -
@@ -1353,8 +1353,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-vyhdas"
-      binary: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-vyhdas"
+      source: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-ko161l"
+      binary: "C:/Users/sksk1/Documents/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-ko161l"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1364,40 +1364,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-vyhdas'
+        Change Dir: 'C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-ko161l'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_40f30.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b3421.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.6+db5f6012c for .NET Framework
-        Build started 28/07/2025 00:10:39.
+        Build started 28/07/2025 11:35:01.
         
-        Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vyhdas\\cmTC_40f30.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ko161l\\cmTC_b3421.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_40f30.dir\\Debug\\".
+          Creating directory "cmTC_b3421.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vyhdas\\Debug\\".
-          Creating directory "cmTC_40f30.dir\\Debug\\cmTC_40f30.tlog\\".
+          Creating directory "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ko161l\\Debug\\".
+          Creating directory "cmTC_b3421.dir\\Debug\\cmTC_b3421.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_40f30.dir\\Debug\\cmTC_40f30.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_40f30.dir\\Debug\\cmTC_40f30.tlog\\unsuccessfulbuild".
+          Creating "cmTC_b3421.dir\\Debug\\cmTC_b3421.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b3421.dir\\Debug\\cmTC_b3421.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_40f30.dir\\Debug\\\\" /Fd"cmTC_40f30.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b3421.dir\\Debug\\\\" /Fd"cmTC_b3421.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_40f30.dir\\Debug\\\\" /Fd"cmTC_40f30.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b3421.dir\\Debug\\\\" /Fd"cmTC_b3421.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vyhdas\\Debug\\cmTC_40f30.exe" /INCREMENTAL /ILK:"cmTC_40f30.dir\\Debug\\cmTC_40f30.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-vyhdas/Debug/cmTC_40f30.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-vyhdas/Debug/cmTC_40f30.lib" /MACHINE:X64  /machine:x64 cmTC_40f30.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_40f30.vcxproj -> C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vyhdas\\Debug\\cmTC_40f30.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ko161l\\Debug\\cmTC_b3421.exe" /INCREMENTAL /ILK:"cmTC_b3421.dir\\Debug\\cmTC_b3421.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-ko161l/Debug/cmTC_b3421.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/sksk1/Documents/לימודים/BootCamp/CTD/CTD25_Solutions/KFC_Merged/build/CMakeFiles/CMakeScratch/TryCompile-ko161l/Debug/cmTC_b3421.lib" /MACHINE:X64  /machine:x64 cmTC_b3421.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b3421.vcxproj -> C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ko161l\\Debug\\cmTC_b3421.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_40f30.dir\\Debug\\cmTC_40f30.tlog\\unsuccessfulbuild".
-          Touching "cmTC_40f30.dir\\Debug\\cmTC_40f30.tlog\\cmTC_40f30.lastbuildstate".
-        Done Building Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vyhdas\\cmTC_40f30.vcxproj" (default targets).
+          Deleting file "cmTC_b3421.dir\\Debug\\cmTC_b3421.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b3421.dir\\Debug\\cmTC_b3421.tlog\\cmTC_b3421.lastbuildstate".
+        Done Building Project "C:\\Users\\sksk1\\Documents\\לימודים\\BootCamp\\CTD\\CTD25_Solutions\\KFC_Merged\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ko161l\\cmTC_b3421.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:03.24
+        Time Elapsed 00:00:02.18
         
       exitCode: 0
   -

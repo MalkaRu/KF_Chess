@@ -36,6 +36,12 @@
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\GraphicsFactory.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\KeyboardProcessor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\KeyboardProducer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\sksk1\Documents\לימודים\BootCamp\CTD\CTD25_Solutions\KFC_Merged\src\Moves.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

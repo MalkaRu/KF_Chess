@@ -71,6 +71,5 @@ void Graphics::update(int now_ms) {
 
 const ImgPtr Graphics::get_img() const {
 	if (frames.empty()) throw std::runtime_error("Graphics has no frames loaded");
-	std::cout << "[FRAME] Showing frame " << cur_frame << "/" << frames.size() << " (should be image " << (cur_frame + 1) << ".png)" << std::endl;
 	return frames[cur_frame];
 }
